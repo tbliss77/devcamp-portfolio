@@ -37,7 +37,7 @@ puts "5 skills post created"
     irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     main_image: "http://placehold.it/600x400" ,
-    thumb_image: "http://placehold.it/350x150" ,
+    thumb_image: "http://placehold.it/350x200" ,
     )
   
 end
@@ -51,7 +51,7 @@ end
     irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     main_image: "http://placehold.it/600x400" ,
-    thumb_image: "http://placehold.it/350x150" ,
+    thumb_image: "http://placehold.it/350x200" ,
     )
   
 end
