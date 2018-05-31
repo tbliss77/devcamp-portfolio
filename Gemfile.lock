@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/tbliss77/bliss_view_tool
+  revision: 82b2129fa252e110cfe8ca199830d3c57110597b
+  specs:
+    bliss_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -186,6 +192,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bliss_view_tool!
   bootstrap (~> 4.1.1)
   byebug
   coffee-rails (~> 4.2)
