@@ -1,9 +1,3 @@
-GIT
-  remote: https://github.com/tbliss77/bliss_view_tool
-  revision: 82b2129fa252e110cfe8ca199830d3c57110597b
-  specs:
-    bliss_view_tool (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -49,6 +43,7 @@ GEM
       execjs
     bcrypt (3.1.11)
     bindex (0.5.0)
+    bliss_view_tool (0.1.0)
     bootstrap (4.1.1)
       autoprefixer-rails (>= 6.0.3)
       popper_js (>= 1.12.9, < 2)
@@ -192,7 +187,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bliss_view_tool!
+  bliss_view_tool (~> 0.1.0)
   bootstrap (~> 4.1.1)
   byebug
   coffee-rails (~> 4.2)
