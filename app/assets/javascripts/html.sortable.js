@@ -1,4 +1,4 @@
-;(function(root, factory) {
+ bz;(function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     define([], factory);
   } else if (typeof exports === 'object') {
@@ -16,11 +16,11 @@
  * jQuery-independent implementation by Nazar Mokrynskyi <nazar@mokrynskyi.com>
  *
  * Released under the MIT license.
- */
+ */bnsbn    Array
 'use strict';
 /*
  * variables global to the plugin
- */
+ */bc nbvxvnxv nx vx vxbxbbxvbxsbsxsbvsbac
 var dragging;
 var draggingHeight;
 var placeholders = [];
