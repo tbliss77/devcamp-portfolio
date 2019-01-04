@@ -1,11 +1,11 @@
 class Blog < ApplicationRecord
-  enum status: { draft: 0, published: 1}
+  enum status: { draft: 0, published: 1 }
   extend FriendlyId
   friendly_id :title, use: :slugged
 
-  validates_presence_of :title, :body, :topic_id
+  validates_presence_of :title, :body
 
-  belongs_to :topic, required: false
+  belongs_to :topic
 
   has_many :comments, dependent: :destroy
 
@@ -13,7 +13,7 @@ class Blog < ApplicationRecord
     all
   end
 
-  def self.special_blogs
+  def self.featured_blogs
     limit(2)
   end
 
