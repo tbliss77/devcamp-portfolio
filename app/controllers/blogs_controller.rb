@@ -20,10 +20,11 @@ class BlogsController < ApplicationController
     if logged_in?(:site_admin) || @blog.published?
       @blog = Blog.includes(:comments).friendly.find(params[:id])
       @comment = Comment.new
-      
+
       @page_title = @blog.title
       @seo_keywords = @blog.body
-    else redirect_to blogs_path, notice: "You are not authorized to access this page"
+    else
+      redirect_to blogs_path, notice: "You are not authorized to access this page"
     end
   end
 
@@ -67,7 +68,7 @@ class BlogsController < ApplicationController
   def destroy
     @blog.destroy
     respond_to do |format|
-      format.html { redirect_to blogs_url, notice: 'Post was successfully deleted.' }
+      format.html { redirect_to blogs_url, notice: 'Post was removed.' }
       format.json { head :no_content }
     end
   end
@@ -75,10 +76,10 @@ class BlogsController < ApplicationController
   def toggle_status
     if @blog.draft?
       @blog.published!
-    elsif @blog.published! 
-      @blog.draft!      
+    elsif @blog.published?
+      @blog.draft!
     end
-
+        
     redirect_to blogs_url, notice: 'Post status has been updated.'
   end
 
@@ -90,6 +91,6 @@ class BlogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
-      params.require(:blog).permit(:title, :body)
+      params.require(:blog).permit(:title, :body, :topic_id)
     end
 end
