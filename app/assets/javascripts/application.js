@@ -19,7 +19,7 @@
 //= require cocoon
 //= require gritter
 //= require lib/typed
-//= require typed-implementation
+//= require lib/typed-implementation
 //= require cable
 //= require turbolinks
 //= require_tree .
